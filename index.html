@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Footprint Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Water Footprint Scanner</h1>
+  <div id="camera-container">
+    <video id="video" autoplay></video>
+    <button id="capture-btn">Capture Image</button>
+    <canvas id="canvas" style="display:none;"></canvas> <!-- Hidden canvas for capturing -->
+  </div>
+  <div id="output">
+    <h2 id="result">Please capture an image to calculate the water footprint.</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
