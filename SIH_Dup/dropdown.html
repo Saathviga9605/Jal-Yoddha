@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jal Yoddha</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #2a9d8f;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        /* Navigation bar styles */
+        nav {
+            background-color: #264653;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            position: relative;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #2a9d8f;
+            border-radius: 5px;
+        }
+        /* Dropdown menu styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #264653;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #fff;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #2a9d8f;
+        }
+
+        nav li:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jal Yoddha</h1>
+        <p>"Empowering you to make informed water choices for a sustainable future"</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+                <div class="dropdown-content">
+                    <a href="#mission">Mission</a>
+                    <a href="#team">Team</a>
+                    <a href="#history">History</a>
+                </div>
+            </li>
+            <li>
+                <a href="#calculate-water-footprint">Calculate Water Footprint</a>
+                <div class="dropdown-content">
+                    <a href="#text-input">Text Input</a>
+                    <a href="#upload-image">Upload Image</a>
+                </div>
+            </li>
+            <li>
+                <a href="#resources">Resources</a>
+                <div class="dropdown-content">
+                    <a href="#articles">Articles</a>
+                    <a href="#videos">Videos</a>
+                    <a href="#guides">Guides</a>
+                </div>
+            </li>
+            <li>
+                <a href="#translation">Translation</a>
+                <div class="dropdown-content">
+                    <a href="#hindi">Hindi</a>
+                    <a href="#bengali">Bengali</a>
+                    <a href="#tamil">Tamil</a>
+                    <!-- Add more languages as needed -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Add content or images to enhance the home page visual appeal -->
+    </div>
+</body>
+</html>
