@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Picture - Water Footprint Calculator</title>
+    <link rel="stylesheet" href="upload.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Upload Picture for Water Footprint Calculation</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Upload a picture related to your water usage to help us calculate your water footprint. Please make sure the image is in JPG, JPEG, or PNG format.</p>
+        </section>
+
+        <section class="centered-box">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="file-input-container">
+                    <label for="fileUpload" class="file-label">Choose a picture:</label>
+                    <input type="file" id="fileUpload" name="fileUpload" accept=".jpg, .jpeg, .png" required>
+                </div>
+                <div class="buttons-container">
+                    <button type="submit" class="button" id="submitButton">Upload</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

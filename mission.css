@@ -1,0 +1,161 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f8fb;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+header {
+    background-color: #0077b6;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Navbar styling */
+nav.navbar {
+    background-color: #0077b6;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 100px; /* Sticks below the header */
+    z-index: 999;
+}
+
+nav.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav.navbar ul li {
+    display: inline;
+}
+
+nav.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav.navbar ul li a:hover {
+    color: #00b4d8;
+}
+
+/* Content section styling */
+.content-section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 120px; /* Adds space after the sticky navbar */
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+/* Image styling */
+/* General container styling */
+.content-section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 140px;
+}
+
+/* Image styling */
+.content-image {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Space around the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Optional: Add a minimum width to images */
+.content-image {
+    min-width: 300px; /* Adjust based on your needs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-image {
+        margin: 15px 0; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Example grid for image and text layout */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center images */
+}
+
+.image-grid .content-image {
+    flex: 1 1 300px; /* Flexible basis with a minimum size */
+    max-width: 100%;
+}
+
+
+.content-section p, .content-section ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content-section ul {
+    padding-left: 20px;
+}
+
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-size: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #00b4d8;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav.navbar ul li {
+        margin: 0 10px;
+    }
+
+    .content-section {
+        padding: 60px 15px;
+    }
+}
